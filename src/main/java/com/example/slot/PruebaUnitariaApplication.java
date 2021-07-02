@@ -8,8 +8,8 @@ import org.springframework.boot.CommandLineRunner;
 @SpringBootApplication
 public class PruebaUnitariaApplication implements CommandLineRunner{
 
-	@Autowired
-	ServicioDeCalculadora servicioDeCalculadora;
+
+	ServicioDeCalculadora servicioDeCalculadora = new ServicioDeCalculadora();
 	
 	public static void main(String[] args) {
 		SpringApplication.run(PruebaUnitariaApplication.class, args);
